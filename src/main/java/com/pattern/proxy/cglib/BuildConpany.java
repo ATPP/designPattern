@@ -20,6 +20,7 @@ public class BuildConpany implements MethodInterceptor {
     }
 
 
+    @Override
     public Object intercept(Object o, Method method, Object[] objects, MethodProxy methodProxy) throws Throwable {
         System.out.println("建造新的之前");
         methodProxy.invokeSuper(o,objects);
