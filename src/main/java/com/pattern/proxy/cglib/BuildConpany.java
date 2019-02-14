@@ -7,6 +7,8 @@ import net.sf.cglib.proxy.MethodProxy;
 
 import java.lang.reflect.Method;
 
+//2.定义一个拦截器。在调用目标方法时，CGLib会回调MethodInterceptor接口方法拦截，
+// 来实现你自己的代理逻辑，类似于JDK中的InvocationHandler接口
 public class BuildConpany implements MethodInterceptor {
 
     private Object target;

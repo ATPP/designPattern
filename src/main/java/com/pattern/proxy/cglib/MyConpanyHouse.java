@@ -1,8 +1,8 @@
 package com.pattern.proxy.cglib;
 
-public class MyConpanyHouse implements House {
+//1.定义一个类，该类没有实现任何接口
+public class MyConpanyHouse {
 
-    @Override
     public void bulieHouse() {
         System.out.println("造房子");
     }
