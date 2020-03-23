@@ -15,6 +15,7 @@ public class BuildConpany implements MethodInterceptor {
 
     public Object getInstans(Object target){
         this.target = target;
+        //为目标对象动态生成一个子类，并将横切逻辑附加到该子类
         Enhancer enhancer = new Enhancer();
         enhancer.setSuperclass(this.target.getClass());
         enhancer.setCallback(this);
